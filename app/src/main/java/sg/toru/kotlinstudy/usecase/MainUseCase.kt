@@ -37,6 +37,12 @@ class BDelegate:BaseDelegate{
     }
 }
 
+class CDelegate:BaseDelegate{
+    override fun doSomething() {
+        Log.e("Toru", "do C!")
+    }
+}
+
 class ViewModelDelegate(
     private val baseDelegate:BaseDelegate
 ):BaseDelegate by baseDelegate
